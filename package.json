@@ -1,0 +1,30 @@
+{
+  "name": "denali-babel",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "denali test"
+  },
+  "keywords": [
+    "denali",
+    "denali-addon",
+    "addon"
+  ],
+  "main": "app/addon.js",
+  "dependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-class-properties": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "bluebird": "^3.4.6",
+    "eslint-config-denali": "^1.1.0",
+    "denali": "0.0.13",
+    "lodash": "^4.16.4"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-eslint": "^6.0.4"
+  },
+  "ava": {
+    "plugins": [],
+    "presets": []
+  }
+}
