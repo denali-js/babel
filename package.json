@@ -15,8 +15,9 @@
     "babel-plugin-transform-class-properties": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
     "bluebird": "^3.4.6",
-    "eslint-config-denali": "^1.1.0",
+    "broccoli-babel-transpiler": "^5.6.1",
     "denali": "0.0.13",
+    "eslint-config-denali": "^1.1.0",
     "lodash": "^4.16.4"
   },
   "devDependencies": {
