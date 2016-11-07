@@ -5,16 +5,16 @@ import BabelTree from 'broccoli-babel-transpiler';
 
 export default class DenaliBabelBuilder extends Builder {
 
-  processSelf(tree) {
-    return this.transpile(tree);
+  processSelf(tree, dir) {
+    return this.transpile(tree, dir);
   }
 
-  processParent(tree) {
-    return this.transpile(tree);
+  processParent(tree, dir) {
+    return this.transpile(tree, dir);
   }
 
-  transpile(tree) {
-    let babelrcPath = path.join(this.dir, '.babelrc');
+  transpile(tree, dir) {
+    let babelrcPath = path.join(dir, '.babelrc');
     let options;
     if (fs.existsSync(babelrcPath)) {
       options = JSON.parse(fs.readFileSync(babelrcPath, 'utf-8'));
