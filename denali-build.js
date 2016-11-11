@@ -31,6 +31,8 @@ export default class DenaliBabelBuilder extends Builder {
         ]
       };
     }
+    options.sourceMaps = 'inline';
+    options.sourceRoot = dir;
     return new BabelTree(tree, options);
   }
 
