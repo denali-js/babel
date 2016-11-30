@@ -17,7 +17,7 @@
     "bluebird": "^3.4.6",
     "broccoli-babel-transpiler": "^6.0.0-alpha.2",
     "eslint-config-denali": "^1.1.0",
-    "denali": "^0.0.14",
+    "denali": "0.0.x",
     "lodash": "^4.16.4"
   },
   "devDependencies": {
