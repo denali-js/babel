@@ -9,7 +9,7 @@
     "denali-addon",
     "addon"
   ],
-  "main": "app/addon.js",
+  "main": "denali-build.js",
   "dependencies": {
     "babel-plugin-syntax-async-functions": "^6.13.0",
     "babel-plugin-syntax-trailing-function-commas": "^6.13.0",
