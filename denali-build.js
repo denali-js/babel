@@ -2,6 +2,7 @@ import { Builder } from 'denali';
 import fs from 'fs';
 import path from 'path';
 import BabelTree from 'broccoli-babel-transpiler';
+import Funnel from 'broccoli-funnel';
 
 export default class DenaliBabelBuilder extends Builder {
 
@@ -43,7 +44,7 @@ export default class DenaliBabelBuilder extends Builder {
     }
     options.sourceMaps = 'inline';
     options.sourceRoot = dir;
-    return new BabelTree(tree, options);
+    return new BabelTree(new Funnel(tree, { exclude: options.ignore }), options);
   }
 
 }

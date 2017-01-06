@@ -27,6 +27,7 @@
     "babel-plugin-transform-runtime": "^6.15.0",
     "bluebird": "^3.4.6",
     "broccoli-babel-transpiler": "^6.0.0-alpha.2",
+    "broccoli-funnel": "^1.1.0",
     "denali": "0.0.x",
     "eslint-config-denali": "^1.1.0",
     "lodash": "^4.16.4"
