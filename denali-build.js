@@ -1,10 +1,10 @@
-import { Builder } from 'denali';
-import fs from 'fs';
-import path from 'path';
-import BabelTree from 'broccoli-babel-transpiler';
-import Funnel from 'broccoli-funnel';
+const Builder = require('denali/lib/cli/builder').default;
+const fs = require('fs');
+const path = require('path');
+const BabelTree = require('broccoli-babel-transpiler');
+const Funnel = require('broccoli-funnel');
 
-export default class DenaliBabelBuilder extends Builder {
+module.exports = class DenaliBabelBuilder extends Builder {
 
   processSelf(tree, dir) {
     return this.transpile(tree, dir);
@@ -47,4 +47,4 @@ export default class DenaliBabelBuilder extends Builder {
     return new BabelTree(new Funnel(tree, { exclude: options.ignore }), options);
   }
 
-}
+};
