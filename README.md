@@ -5,7 +5,6 @@
 [![Coverage][coverage-image]][coverage-url]
 [![Dependency Status][depstat-image]][depstat-url]
 [![Downloads][download-image]][npm-url]
-[![Standard Version][sv-image]][sv-url]
 
 Transpile your Denali app using Babel.
 
