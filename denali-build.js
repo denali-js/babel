@@ -1,17 +1,14 @@
 const { Builder } = require('denali-cli');
 const fs = require('fs');
 const path = require('path');
+const MergeTree = require('broccoli-merge-trees');
 const BabelTree = require('broccoli-babel-transpiler');
 const Funnel = require('broccoli-funnel');
 
 module.exports = class DenaliBabelBuilder extends Builder {
 
-  processSelf(tree, dir) {
-    return this.transpile(tree, dir);
-  }
-
   processParent(tree, dir) {
-    return this.transpile(tree, dir);
+    return new MergeTree([ tree, this.transpile(tree, dir) ], { overwrite: true });
   }
 
   transpile(tree, dir) {
