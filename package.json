@@ -2,7 +2,9 @@
   "name": "denali-babel",
   "version": "0.0.11",
   "scripts": {
-    "test": "denali test"
+    "build": "denali build",
+    "test": "denali test",
+    "prepublish": "in-publish && echo \"Use 'denali publish' instead.\" && exit 1 || not-in-publish"
   },
   "keywords": [
     "denali",
@@ -30,6 +32,7 @@
     "broccoli-funnel": "^1.1.0",
     "denali-cli": "^0.0.3",
     "eslint-config-denali": "^1.1.0",
+    "in-publish": "^2.0.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
