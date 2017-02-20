@@ -1,4 +1,4 @@
-const Builder = require('denali/lib/cli/builder').default;
+const { Builder } = require('denali-cli');
 const fs = require('fs');
 const path = require('path');
 const BabelTree = require('broccoli-babel-transpiler');
