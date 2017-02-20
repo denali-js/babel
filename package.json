@@ -1,6 +1,6 @@
 {
   "name": "denali-babel",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "scripts": {
     "build": "denali build",
     "test": "denali test",
