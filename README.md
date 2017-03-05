@@ -1,5 +1,7 @@
 # denali-babel
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/denali-js/denali-babel.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Coverage][coverage-image]][coverage-url]
