@@ -3,8 +3,7 @@
   "version": "0.0.13",
   "scripts": {
     "build": "denali build",
-    "test": "denali test",
-    "prepublish": "in-publish && echo \"Use 'denali publish' instead.\" && exit 1 || not-in-publish"
+    "test": "denali test"
   },
   "keywords": [
     "denali",
@@ -18,15 +17,14 @@
     "broccoli-funnel": "^1.1.0",
     "broccoli-merge-trees": "^1.2.1",
     "debug": "^2.6.1",
-    "denali-cli": "^0.0.3",
+    "denali-cli": "0.0.x",
     "eslint-config-denali": "^1.1.0",
-    "in-publish": "^2.0.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
     "ava": "^0.18.2",
     "babel-eslint": "^7.1.1",
-    "denali": "^0.0.20"
+    "denali": "0.0.x"
   },
   "ava": {
     "plugins": [],
