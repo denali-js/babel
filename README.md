@@ -23,17 +23,6 @@ transformation.
 
 For more details, check out [the Babel docs](https://babeljs.io/docs/usage/babelrc/).
 
-## Caveats
-
-Because not every planned feature of the JavaScript language can be perfectly transpiled to older
-syntax, there are limitations to Babel's output.
-
-One limitation in particular is important for Denali users. Denali makes heavy use of async/await
-syntax, and the default `.babelrc` configuration includes support for that syntax. However,
-Babel's implementation of async/await
-[does not support `super` properly](https://github.com/babel/babel/issues/3930). So be aware that
-any time you need to use `super`, you'll need to avoid async/await syntax.
-
 
 [npm-url]: https://npmjs.org/package/denali-babel
 [npm-image]: https://img.shields.io/npm/v/denali-babel.svg?style=flat-square
