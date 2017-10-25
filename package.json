@@ -11,6 +11,7 @@
     "addon"
   ],
   "main": "denali-build.js",
+  "mainDir": "dist",
   "dependencies": {
     "bluebird": "^3.4.7",
     "broccoli-babel-transpiler": "^6.0.0-alpha.2",
