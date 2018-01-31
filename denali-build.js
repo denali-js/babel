@@ -1,4 +1,4 @@
-const { Builder } = require('denali-cli');
+const { AddonBuilder } = require('denali-cli');
 const fs = require('fs');
 const path = require('path');
 const MergeTree = require('broccoli-merge-trees');
@@ -6,7 +6,7 @@ const BabelTree = require('broccoli-babel-transpiler');
 const Funnel = require('broccoli-funnel');
 const debug = require('debug')('denali-babel');
 
-module.exports = class DenaliBabelBuilder extends Builder {
+module.exports = class DenaliBabelBuilder extends AddonBuilder {
 
   processParent(tree, dir) {
     debug(`transpiling parent builder: ${ dir }`);
@@ -20,20 +20,12 @@ module.exports = class DenaliBabelBuilder extends Builder {
       options = JSON.parse(fs.readFileSync(babelrcPath, 'utf-8'));
     } else {
       options = {
-        plugins: [
-          'transform-exponentiation-operator',
-          'syntax-trailing-function-commas',
-          'transform-es2015-arrow-functions',
-          'transform-es2015-template-literals',
-          'transform-es2015-spread',
-          'transform-es2015-shorthand-properties',
-          'transform-es2015-destructuring',
-          'transform-class-properties',
-          'transform-es2015-classes',
-          'transform-es2015-modules-commonjs',
-          'transform-regenerator',
-          'syntax-async-functions',
-          'transform-runtime'
+        presets: [
+          ["env", {
+            targets: {
+              node: "current"
+            }
+          }]
         ],
         ignore: [
           'blueprints/*/files/**',
