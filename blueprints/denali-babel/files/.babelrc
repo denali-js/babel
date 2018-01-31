@@ -1,10 +1,13 @@
 {
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
   "plugins": [
-    "syntax-trailing-function-commas",
-    "transform-es2015-spread",
-    "transform-class-properties",
-    "transform-es2015-modules-commonjs",
-    "transform-runtime"
+    ["transform-class-properties", { "spec": true }]
   ],
   "ignore": [
     "blueprints/*/files/**",

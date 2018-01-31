@@ -1,7 +1,7 @@
 import test from 'ava';
 import * as fs from 'fs';
 import * as path from 'path';
-import { CommandAcceptanceTest } from 'denali';
+import { CommandAcceptanceTest } from 'denali-cli';
 
 test('transpiles source with babel', async (t) => {
   let build = new CommandAcceptanceTest('build', { name: 'build-command' });

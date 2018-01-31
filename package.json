@@ -11,15 +11,16 @@
     "addon"
   ],
   "main": "denali-build.js",
-  "mainDir": "dist",
+  "license": "Apache-2.0",
   "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "bluebird": "^3.4.7",
     "broccoli-babel-transpiler": "^6.0.0-alpha.2",
     "broccoli-funnel": "^1.1.0",
     "broccoli-merge-trees": "^1.2.1",
     "debug": "^2.6.1",
     "denali-cli": "0.0.x",
-    "eslint-config-denali": "^1.1.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
