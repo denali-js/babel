@@ -3,12 +3,17 @@
   "version": "0.0.14",
   "scripts": {
     "build": "denali build",
-    "test": "denali test"
+    "test": "denali test",
+    "prepublishOnly": "denali build"
   },
   "keywords": [
     "denali",
     "denali-addon",
     "addon"
+  ],
+  "files": [
+    "dist",
+    "denali-build.js"
   ],
   "main": "denali-build.js",
   "license": "Apache-2.0",
