@@ -2189,9 +2189,9 @@ delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
 
-denali-cli@0.0.23:
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/denali-cli/-/denali-cli-0.0.23.tgz#7e89c67ef0397029ecb6fa278c1030ea606faf76"
+denali-cli@0.0.24:
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/denali-cli/-/denali-cli-0.0.24.tgz#e7620bfde871b7d19896fa015dd49b97f50b058f"
   dependencies:
     "@denali-js/documenter" "^1.0.1"
     "@types/bluebird" "^3.5.20"
@@ -2247,9 +2247,9 @@ denali-cli@0.0.23:
     walk-sync "^0.3.2"
     yargs "^11.0.0"
 
-denali@0.0.42:
-  version "0.0.42"
-  resolved "https://registry.yarnpkg.com/denali/-/denali-0.0.42.tgz#91293f6a84a3c55dfec1230ed8759eacc6a76756"
+denali@0.0.43:
+  version "0.0.43"
+  resolved "https://registry.yarnpkg.com/denali/-/denali-0.0.43.tgz#752da29b50ca9ecb39172545251e16b47ce2de41"
   dependencies:
     "@denali-js/loader" "*"
     "@types/accepts" "^1.3.3"
@@ -2293,7 +2293,7 @@ denali@0.0.42:
     dag-map "^2.0.2"
     debug "^3.1.0"
     dedent-js "^1.0.1"
-    denali-cli "0.0.23"
+    denali-cli "0.0.24"
     findup-sync "^2.0.0"
     fs-extra "^5.0.0"
     helmet "^3.8.2"
