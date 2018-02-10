@@ -8,8 +8,11 @@ const debug = require('debug')('denali-babel');
 
 module.exports = class DenaliBabelBuilder extends AddonBuilder {
 
+  processSelf(tree, dir) {
+    return new MergeTree([ tree, this.transpile(tree, dir) ], { overwrite: true });
+  }
+
   processParent(tree, dir) {
-    debug(`transpiling parent builder: ${ dir }`);
     return new MergeTree([ tree, this.transpile(tree, dir) ], { overwrite: true });
   }
 
