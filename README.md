@@ -1,16 +1,16 @@
-# denali-babel
+# @denali-js/babel
 
-[![CircleCI](https://img.shields.io/circleci/project/github/denali-js/denali-babel.svg?style=flat-square)](https://circleci.com/gh/denali-js/denali-babel)
-[![Dependencies](https://img.shields.io/david/denali-js/denali-babel.svg?style=flat-square)](https://david-dm.org/denali-js/denali-babel)
-[![npm downloads](https://img.shields.io/npm/dm/denali-babel.svg?style=flat-square)](https://www.npmjs.com/package/denali-babel)
-![latest version](https://img.shields.io/npm/v/denali-babel.svg?style=flat-square)
+[![CircleCI](https://img.shields.io/circleci/project/github/denali-js/babel.svg?style=flat-square)](https://circleci.com/gh/denali-js/babel)
+[![Dependencies](https://img.shields.io/david/denali-js/babel.svg?style=flat-square)](https://david-dm.org/denali-js/babel)
+[![npm downloads](https://img.shields.io/npm/dm/@denali-js/babel.svg?style=flat-square)](https://www.npmjs.com/package/@denali-js/babel)
+![latest version](https://img.shields.io/npm/v/@denali-js/babel.svg?style=flat-square)
 
 Transpile your Denali app using Babel.
 
 ## Installation
 
 ```sh
-$ denali install denali-babel
+$ denali install @denali-js/babel
 ```
 
 ## Configuring

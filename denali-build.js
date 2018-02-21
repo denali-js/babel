@@ -1,10 +1,10 @@
-const { AddonBuilder } = require('denali-cli');
+const { AddonBuilder } = require('@denali-js/cli');
 const fs = require('fs');
 const path = require('path');
 const MergeTree = require('broccoli-merge-trees');
 const BabelTree = require('broccoli-babel-transpiler');
 const Funnel = require('broccoli-funnel');
-const debug = require('debug')('denali-babel');
+const debug = require('debug')('@denali-js/babel');
 
 module.exports = class DenaliBabelBuilder extends AddonBuilder {
 

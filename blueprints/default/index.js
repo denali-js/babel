@@ -1,4 +1,4 @@
-import { Blueprint } from 'denali-cli';
+import { Blueprint } from '@denali-js/cli';
 
 const packages = [
   'babel-preset-env',
@@ -7,7 +7,7 @@ const packages = [
 
 export default class DenaliBabelBlueprint extends Blueprint {
 
-  static blueprintName = 'denali-babel';
+  static blueprintName = 'default';
   static description = 'Generate the default .babelrc and install babel plugins';
 
   postInstall() {
